@@ -6,8 +6,7 @@ namespace Kanonji.SmallExperiment.VariableInitialized {
 
 		//[SerializeField] private float unityEngineRandomValue = UnityEngine.Random.value; //Got Error.
 		//[SerializeField] private int unityEngineRandomRange = UnityEngine.Random.Range(1, 101); //Got Error.
-		[SerializeField]
-		private float systemRandomRange = (new System.Random()).Next(100);
+		[SerializeField] private float systemRandomRange = (new System.Random()).Next(100);
 		private static float staticUnityEngineRandomValue = UnityEngine.Random.value;
 		private static float staticSystemRandomRange = (new System.Random()).Next(100);
 
